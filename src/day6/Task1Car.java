@@ -1,4 +1,4 @@
-package day5;
+package day6;
 
 public class Task1Car {
     private int year;
@@ -27,5 +27,16 @@ public class Task1Car {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public void info(){
+        System.out.println("Это машина");
+
+    }
+
+    public int yearDifference(int inputYear ){
+        return inputYear - year;
+
+
     }
 }

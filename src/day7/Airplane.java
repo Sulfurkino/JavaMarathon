@@ -1,6 +1,4 @@
-package day6;
-
-import java.util.Scanner;
+package day7;
 
 public class Airplane {
     private String producer;
@@ -25,6 +23,10 @@ public class Airplane {
         this.producer = producer;
     }
 
+    public int getLength() {
+        return length;
+    }
+
     public Airplane(String producer, int year, int length, int weight) {
         fuel = 0;
         this.producer = producer;
@@ -47,6 +49,18 @@ public class Airplane {
 
     public void fillUp(int fuelLiters){
         fuel += fuelLiters;
+
+    }
+
+    public static void compareAirlines(Airplane airplane1, Airplane airplane2){
+        if (airplane1.getLength() > airplane2.getLength()) {
+            System.out.println("Самолет 1 длиннее самолета 2");
+        } else if (airplane1.getLength() < airplane2.getLength()) {
+            System.out.println("Самолет 2 длиннее самолета 1");
+        } else {
+            System.out.println("Самолеты равной длины");
+        }
+
 
     }
 

@@ -1,4 +1,4 @@
-package day5;
+package day6;
 
 public class Task2Motorbike {
     private int year;
@@ -21,5 +21,10 @@ public class Task2Motorbike {
 
     public String getModel() {
         return model;
+    }
+
+    public void info(){
+        System.out.println("Это мотоцикл");
+
     }
 }
