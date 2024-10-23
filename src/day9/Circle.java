@@ -2,17 +2,27 @@ package day9;
 
 public class Circle extends Figure {
 
-    public Circle(String color) {
+
+
+    int radius;
+
+    public Circle(String color, int radius) {
         super(color);
+        this.radius = radius;
     }
+
 
     @Override
     public double area() {
-        return 0;
+        double area = Math.PI * radius * radius; // площадь
+
+
+        return area;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        double perimeter = 2 * Math.PI * radius; // периметр
+        return perimeter;
     }
 }
