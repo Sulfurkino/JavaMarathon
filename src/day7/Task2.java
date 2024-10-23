@@ -12,11 +12,15 @@ public class Task2 {
         Player num7 = new Player();
 
         Player.info();
+
         System.out.println("количество игроков на поле - " + Player.getPlayersCount());
         System.out.println(num6.getStamina());
 
+        for (int i = 0; i < 100; i++) {
+            num6.run();
+        }
 
-        num6.run();
+
 
         System.out.println(num6.getStamina());
 

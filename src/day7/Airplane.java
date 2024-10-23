@@ -51,7 +51,7 @@ public class Airplane {
         fuel += fuelLiters;
 
     }
-
+    //    TODO переписать по книге фаулера (усл выр)
     public static void compareAirlines(Airplane airplane1, Airplane airplane2){
         if (airplane1.getLength() > airplane2.getLength()) {
             System.out.println("Самолет 1 длиннее самолета 2");
