@@ -12,6 +12,9 @@ public class Task {
         for (int i = 0; i < 1001; i++) {
             courier1.doWork();
         }
+
+
+
         picker1.bonus();
         courier1.bonus();
 

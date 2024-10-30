@@ -16,20 +16,20 @@ public class Task {
 
         int start = 0;
         int end = array.length;
-        int middle =start + (end - start)/2;
+        int middle;
 
         int number = scanner.nextInt();
 
         while (start<=end){
+            middle =start + (end - start)/2;
             if (number == array[middle]){
                 System.out.println(number);
+                break;
             } else if (number>array[middle]) {
                 start = middle+1;
-
             } else if (number<array[middle]) {
                 end = middle-1;
             }
-
         }
 
 

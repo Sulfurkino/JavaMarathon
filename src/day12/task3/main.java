@@ -47,5 +47,10 @@ public class main {
         System.out.println("\nГруппы, основанные после 2000 года:");
         List<MusicBand> bandsAfter2000 = Task3.groupsAfter2000(bands);
 
+
+        for (MusicBand band : bandsAfter2000){
+            System.out.println(band);
+        }
+
     }
 }

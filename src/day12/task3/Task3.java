@@ -15,9 +15,7 @@ public class Task3 {
             }
 
         }
-        for (MusicBand groupsAfter2000 : bandsAfter2000) {
-            System.out.println(groupsAfter2000);
-        }
+
         return bandsAfter2000;
 
     }
